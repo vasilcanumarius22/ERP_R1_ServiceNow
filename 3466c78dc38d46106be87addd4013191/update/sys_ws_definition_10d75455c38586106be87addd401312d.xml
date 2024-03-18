@@ -4,10 +4,10 @@
         <base_uri>/api/x_1344554_erp_ve_0/vehicles_api</base_uri>
         <consumes>application/json</consumes>
         <consumes_customized>true</consumes_customized>
-        <default_version>No active default version</default_version>
+        <default_version>v1</default_version>
         <doc_link>https://dev242449.service-now.com/x_1344554_erp_ve_0_vehicles_api_documentation.do</doc_link>
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
-        <is_versioned>false</is_versioned>
+        <is_versioned>true</is_versioned>
         <name>Vehicles API</name>
         <namespace>x_1344554_erp_ve_0</namespace>
         <produces>application/json</produces>
@@ -18,13 +18,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-18 20:27:19</sys_created_on>
         <sys_id>10d75455c38586106be87addd401312d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Vehicles API</sys_name>
         <sys_package display_value="ERP_Vehicles_Final" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package>
         <sys_policy/>
         <sys_scope display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</sys_scope>
         <sys_update_name>sys_ws_definition_10d75455c38586106be87addd401312d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-18 20:32:38</sys_updated_on>
+        <sys_updated_on>2024-03-18 22:11:56</sys_updated_on>
     </sys_ws_definition>
 </record_update>

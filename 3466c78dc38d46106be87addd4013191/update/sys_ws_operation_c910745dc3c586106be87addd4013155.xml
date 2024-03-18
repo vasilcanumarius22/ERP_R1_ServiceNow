@@ -3,10 +3,10 @@
         <active>true</active>
         <consumes>application/json</consumes>
         <consumes_customized>false</consumes_customized>
-        <default_operation_uri>/api/x_1344554_erp_ve_0/vehicles_api/vehicles</default_operation_uri>
+        <default_operation_uri/>
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>POST</http_method>
-        <name>Create Vehicles</name>
+        <name>Create Vehicles (v2)</name>
         <operation_script><![CDATA[/*
 API:            Vehicles
 Name:           Create Vehicles
@@ -48,7 +48,7 @@ Description:    Create vehicle(s) from request body data.
             city = result.vehicles[i].city;
 
             var vehicleTable = 'x_1344554_erp_ve_0_vehicle';
-            var vehicleGr = new GlideRecord(vehicleTable);
+            var vehicleGr = new GlideRecordSecure(vehicleTable);
             vehicleGr.initialize();
             vehicleGr.make = make;
             vehicleGr.model = model;
@@ -81,7 +81,7 @@ Description:    Create vehicle(s) from request body data.
 
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_1344554_erp_ve_0/v1/vehicles_api/vehicles</operation_uri>
+        <operation_uri>/api/x_1344554_erp_ve_0/v2/vehicles_api/vehicles</operation_uri>
         <produces>application/json</produces>
         <produces_customized>false</produces_customized>
         <relative_path>/vehicles</relative_path>
@@ -92,17 +92,17 @@ Description:    Create vehicle(s) from request body data.
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-03-18 21:32:50</sys_created_on>
-        <sys_id>1cb62415c3c586106be87addd4013128</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Create Vehicles</sys_name>
+        <sys_created_on>2024-03-18 22:12:56</sys_created_on>
+        <sys_id>c910745dc3c586106be87addd4013155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Vehicles (v2)</sys_name>
         <sys_package display_value="ERP_Vehicles_Final" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package>
         <sys_policy/>
         <sys_scope display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</sys_scope>
-        <sys_update_name>sys_ws_operation_1cb62415c3c586106be87addd4013128</sys_update_name>
+        <sys_update_name>sys_ws_operation_c910745dc3c586106be87addd4013155</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-18 22:18:41</sys_updated_on>
+        <sys_updated_on>2024-03-18 22:12:56</sys_updated_on>
         <web_service_definition display_value="Vehicles API">10d75455c38586106be87addd401312d</web_service_definition>
-        <web_service_version display_value="v1">6edfe0d9c3c586106be87addd40131e8</web_service_version>
+        <web_service_version display_value="v2">4110745dc3c586106be87addd4013153</web_service_version>
     </sys_ws_operation>
 </record_update>

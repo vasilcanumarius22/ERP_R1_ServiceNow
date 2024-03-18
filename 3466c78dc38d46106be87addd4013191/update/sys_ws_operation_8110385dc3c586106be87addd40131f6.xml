@@ -3,16 +3,16 @@
         <active>true</active>
         <consumes>application/json</consumes>
         <consumes_customized>false</consumes_customized>
-        <default_operation_uri>/api/x_1344554_erp_ve_0/vehicles_api/vehicle/{vin}</default_operation_uri>
+        <default_operation_uri/>
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
-        <http_method>DELETE</http_method>
-        <name>Delete Vehicle</name>
+        <http_method>GET</http_method>
+        <name>Get Vehicle (v2)</name>
         <operation_script><![CDATA[/*
 API:            Vehicles
-Name:           Delete Vehicle
-HTTP Method:    DELETE
+Name:           Get Vehicle
+HTTP Method:    GET
 Relative path:  /vehicle/{vin}
-Description:    Delete selected vehicle.
+Description:    Returns data for selected vehicle.
 */
 
 (function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
@@ -30,7 +30,7 @@ Description:    Delete selected vehicle.
 
     // Query the Vehicle table for this VIN.
     var vehicleTable = 'x_1344554_erp_ve_0_vehicle';
-    var vehicleGr = new GlideRecordSecure(vehicleTable);
+    var vehicleGr = new GlideRecord(vehicleTable);
     vehicleGr.addQuery('vin', vin);
     vehicleGr.query();
 
@@ -44,27 +44,23 @@ Description:    Delete selected vehicle.
     // For the vehicle found, generate a JSON object and save the vehicle data in it.
     while (vehicleGr.next()) {
 
-        vehicleGr.deleteRecord();
-
         var vehicleObj = {
-            "vin": vehicleGr.getValue('vin'),
             "make": vehicleGr.getValue('make'),
             "model": vehicleGr.getValue('model'),
-            "year": parseInt(vehicleGr.getValue('year'), 10),
+            "year": vehicleGr.getValue('year'),
+            // Or pass year as integer
+            // "year": parseInt(vehicleGr.getValue('year'), 10),
             "city": vehicleGr.getValue('city'),
-            "country": vehicleGr.getValue('country'),
-            "message": 'Vehicle deleted.'
+            "country": vehicleGr.getValue('country')
         };
-
         answer.push(vehicleObj);
-
     }
 
     // Generate the response body.
     response.setBody(answer);
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_1344554_erp_ve_0/v1/vehicles_api/vehicle/{vin}</operation_uri>
+        <operation_uri>/api/x_1344554_erp_ve_0/v2/vehicles_api/vehicle/{vin}</operation_uri>
         <produces>application/json</produces>
         <produces_customized>false</produces_customized>
         <relative_path>/vehicle/{vin}</relative_path>
@@ -75,17 +71,17 @@ Description:    Delete selected vehicle.
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-03-18 21:54:34</sys_created_on>
-        <sys_id>4ebb6459c3c586106be87addd40131c5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Delete Vehicle</sys_name>
+        <sys_created_on>2024-03-18 22:12:56</sys_created_on>
+        <sys_id>8110385dc3c586106be87addd40131f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Vehicle (v2)</sys_name>
         <sys_package display_value="ERP_Vehicles_Final" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package>
         <sys_policy/>
         <sys_scope display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</sys_scope>
-        <sys_update_name>sys_ws_operation_4ebb6459c3c586106be87addd40131c5</sys_update_name>
+        <sys_update_name>sys_ws_operation_8110385dc3c586106be87addd40131f6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-18 22:11:56</sys_updated_on>
+        <sys_updated_on>2024-03-18 22:12:56</sys_updated_on>
         <web_service_definition display_value="Vehicles API">10d75455c38586106be87addd401312d</web_service_definition>
-        <web_service_version display_value="v1">6edfe0d9c3c586106be87addd40131e8</web_service_version>
+        <web_service_version display_value="v2">4110745dc3c586106be87addd4013153</web_service_version>
     </sys_ws_operation>
 </record_update>
