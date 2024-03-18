@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="88b7cbcdc38d46106be87addd4013188" label="Vehicle" max_length="40" name="x_1344554_erp_ve_0_vehicle" type="collection">
+        <element label="City" max_length="40" name="city" type="string"/>
+        <element label="Country" max_length="40" name="country" type="string"/>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element label="End date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Make" max_length="40" name="make" type="string"/>
+        <element label="Model" max_length="40" name="model" type="string"/>
+        <element label="Start date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="VIN" max_length="40" name="vin" type="string"/>
+        <element label="Year" max_length="40" name="year" type="integer"/>
+    </element>
+</database>
