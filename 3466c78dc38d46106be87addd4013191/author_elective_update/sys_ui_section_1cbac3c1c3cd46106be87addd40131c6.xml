@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New section 1" section_id="1cbac3c1c3cd46106be87addd40131c6" sys_domain="global" table="x_1344554_erp_ve_0_vehicle" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-18 14:49:58</sys_created_on>
+            <sys_id>58ba07c1c3cd46106be87addd401310b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1344554_erp_ve_0_vehicle" sys_domain="global" view="Default view">1cbac3c1c3cd46106be87addd40131c6</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-18 14:49:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New section 1</caption>
+            <header>false</header>
+            <name>x_1344554_erp_ve_0_vehicle</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-18 14:49:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1cbac3c1c3cd46106be87addd40131c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1344554_erp_ve_0_vehicle</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="ERP_Vehicles" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ERP_Vehicles">3466c78dc38d46106be87addd4013191</sys_scope>
+            <sys_update_name>sys_ui_section_1cbac3c1c3cd46106be87addd40131c6</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-18 14:49:58</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</application>
+        <file_path/>
+        <instance_id>521ac62b1bb406d8168f4089bd4bcb8c</instance_id>
+        <instance_name>dev242449</instance_name>
+        <name>sys_ui_section_1cbac3c1c3cd46106be87addd40131c6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New section 1" section_id="1cbac3c1c3cd46106be87addd40131c6" sys_domain="global" table="x_1344554_erp_ve_0_vehicle" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>description</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-18 14:49:58</sys_created_on><sys_id>58ba07c1c3cd46106be87addd401310b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1344554_erp_ve_0_vehicle" sys_domain="global" view="Default view">1cbac3c1c3cd46106be87addd40131c6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-18 14:49:58</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New section 1</caption><header>false</header><name>x_1344554_erp_ve_0_vehicle</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-18 14:49:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1cbac3c1c3cd46106be87addd40131c6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1344554_erp_ve_0_vehicle</sys_name><sys_overrides/><sys_package display_value="ERP_Vehicles" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package><sys_policy/><sys_scope display_value="ERP_Vehicles">3466c78dc38d46106be87addd4013191</sys_scope><sys_update_name>sys_ui_section_1cbac3c1c3cd46106be87addd40131c6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-18 14:49:58</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-406332814</payload_hash>
+        <record_name>Vehicle</record_name>
+        <reverted_from/>
+        <source>001783cdc38d46106be87addd401312f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-18 14:49:58</sys_created_on>
+        <sys_id>d4ba07c1c3cd46106be87addd401310d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e520a6d000000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-18 14:49:58</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>5cba07c17ecd4610562f457fa960040c</update_guid>
+        <update_guid_history>5cba07c17ecd4610562f457fa960040c:-406332814</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-18 18:46:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>5179b2ef26b64468a757b0a13d4bdfe4</sys_id>
+        <sys_metadata>1cbac3c1c3cd46106be87addd40131c6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New section 1</sys_name>
+        <sys_package display_value="ERP_Vehicles_Final" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package>
+        <sys_parent display_value="Erp Ve 0 Vehicle">88b7cbcdc38d46106be87addd4013188</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</sys_scope>
+        <sys_scope_delete display_value="">3ff0c7089b634476b44a98c76b5556c4</sys_scope_delete>
+        <sys_update_name>sys_ui_section_1cbac3c1c3cd46106be87addd40131c6</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_1cbac3c1c3cd46106be87addd40131c6">d4ba07c1c3cd46106be87addd401310d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-18 18:46:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

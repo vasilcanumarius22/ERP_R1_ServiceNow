@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="DELETE">
+        <contains display_value="itil" name="itil">282bf1fac6112285017366cb5f867469</contains>
+        <role display_value="x_1344554_erp_ve_0.user" name="x_1344554_erp_ve_0.user">0d66c78dc38d46106be87addd401319f</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-18 20:20:13</sys_created_on>
+        <sys_id>02465015c38586106be87addd40131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>itil.x_1344554_erp_ve_0.user</sys_name>
+        <sys_package display_value="ERP_Vehicles_Final" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</sys_scope>
+        <sys_update_name>sys_user_role_contains_02465015c38586106be87addd40131ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-18 20:20:13</sys_updated_on>
+    </sys_user_role_contains>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</application>
+        <file_path/>
+        <instance_id>521ac62b1bb406d8168f4089bd4bcb8c</instance_id>
+        <instance_name>dev242449</instance_name>
+        <name>sys_user_role_contains_02465015c38586106be87addd40131ab</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains"><sys_user_role_contains action="INSERT_OR_UPDATE"><contains display_value="itil" name="itil">282bf1fac6112285017366cb5f867469</contains><role display_value="x_1344554_erp_ve_0.user" name="x_1344554_erp_ve_0.user">0d66c78dc38d46106be87addd401319f</role><sys_class_name>sys_user_role_contains</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-18 20:20:13</sys_created_on><sys_id>02465015c38586106be87addd40131ab</sys_id><sys_mod_count>0</sys_mod_count><sys_name>itil.x_1344554_erp_ve_0.user</sys_name><sys_package display_value="ERP_Vehicles_Final" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package><sys_policy/><sys_scope display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</sys_scope><sys_update_name>sys_user_role_contains_02465015c38586106be87addd40131ab</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-18 20:20:13</sys_updated_on></sys_user_role_contains></record_update>]]></payload>
+        <payload_hash>-935344761</payload_hash>
+        <record_name>itil.x_1344554_erp_ve_0.user</record_name>
+        <reverted_from/>
+        <source>001783cdc38d46106be87addd401312f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-18 20:20:13</sys_created_on>
+        <sys_id>86469015c38586106be87addd4013100</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e5338c66a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-18 20:20:13</sys_updated_on>
+        <type>Contained Role</type>
+        <update_guid>ca46501504858610da255cb7347661ff</update_guid>
+        <update_guid_history>ca46501504858610da255cb7347661ff:-935344761</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-18 20:21:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role_contains">sys_user_role_contains</sys_db_object>
+        <sys_id>1d2857ed7af542bcbad58b91621ef224</sys_id>
+        <sys_metadata>02465015c38586106be87addd40131ab</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>itil.x_1344554_erp_ve_0.user</sys_name>
+        <sys_package display_value="ERP_Vehicles_Final" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</sys_scope>
+        <sys_scope_delete display_value="">3ff0c7089b634476b44a98c76b5556c4</sys_scope_delete>
+        <sys_update_name>sys_user_role_contains_02465015c38586106be87addd40131ab</sys_update_name>
+        <sys_update_version display_value="sys_user_role_contains_02465015c38586106be87addd40131ab">86469015c38586106be87addd4013100</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-18 20:21:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

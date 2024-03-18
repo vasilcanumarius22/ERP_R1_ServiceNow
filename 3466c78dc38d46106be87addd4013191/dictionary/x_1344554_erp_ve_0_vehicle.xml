@@ -8,6 +8,6 @@
         <element label="Model" max_length="40" name="model" type="string"/>
         <element label="Start date" max_length="40" name="start_date" type="glide_date"/>
         <element label="VIN" max_length="40" name="vin" type="string"/>
-        <element label="Year" max_length="40" name="year" type="integer"/>
+        <element attributes="format=none" display="true" label="Year" max_length="40" name="year" type="integer"/>
     </element>
 </database>

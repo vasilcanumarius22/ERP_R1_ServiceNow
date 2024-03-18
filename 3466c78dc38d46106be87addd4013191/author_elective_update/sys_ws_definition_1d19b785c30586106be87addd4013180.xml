@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition">
+    <sys_ws_definition action="DELETE">
+        <active>true</active>
+        <base_uri>/api/x_1344554_erp_ve_0/vehicles_api</base_uri>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>true</consumes_customized>
+        <default_version>No active default version</default_version>
+        <doc_link/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <is_versioned>false</is_versioned>
+        <name>Vehicles API</name>
+        <namespace>x_1344554_erp_ve_0</namespace>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <service_id>vehicles_api</service_id>
+        <short_description/>
+        <sys_class_name>sys_ws_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-18 18:12:56</sys_created_on>
+        <sys_id>1d19b785c30586106be87addd4013180</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Vehicles API</sys_name>
+        <sys_package display_value="ERP_Vehicles_Final" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</sys_scope>
+        <sys_update_name>sys_ws_definition_1d19b785c30586106be87addd4013180</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-18 18:14:58</sys_updated_on>
+    </sys_ws_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</application>
+        <file_path/>
+        <instance_id>521ac62b1bb406d8168f4089bd4bcb8c</instance_id>
+        <instance_name>dev242449</instance_name>
+        <name>sys_ws_definition_1d19b785c30586106be87addd4013180</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/x_1344554_erp_ve_0/vehicles_api</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>true</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl><is_versioned>false</is_versioned><name>Vehicles API</name><namespace>x_1344554_erp_ve_0</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>vehicles_api</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-18 18:12:56</sys_created_on><sys_id>1d19b785c30586106be87addd4013180</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Vehicles API</sys_name><sys_package display_value="ERP_Vehicles_Final" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package><sys_policy/><sys_scope display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</sys_scope><sys_update_name>sys_ws_definition_1d19b785c30586106be87addd4013180</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-18 18:14:58</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+        <payload_hash>-1442854763</payload_hash>
+        <record_name>Vehicles API</record_name>
+        <reverted_from/>
+        <source>001783cdc38d46106be87addd401312f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-18 18:14:58</sys_created_on>
+        <sys_id>db99fb85c30586106be87addd4013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e52c61bcf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-18 18:14:58</sys_updated_on>
+        <type>Scripted REST API</type>
+        <update_guid>9399fb853f05861007ae052005311b38</update_guid>
+        <update_guid_history>9399fb853f05861007ae052005311b38:-1442854763,d959bb85700586100b892f1775569edd:-787791506,5d2973853b058610a3c0b3fc1eec9dc1:705934648</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-18 19:03:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_definition">sys_ws_definition</sys_db_object>
+        <sys_id>a799388db4d345e890adf9ac07062139</sys_id>
+        <sys_metadata>1d19b785c30586106be87addd4013180</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vehicles API</sys_name>
+        <sys_package display_value="ERP_Vehicles_Final" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</sys_scope>
+        <sys_scope_delete display_value="">3ff0c7089b634476b44a98c76b5556c4</sys_scope_delete>
+        <sys_update_name>sys_ws_definition_1d19b785c30586106be87addd4013180</sys_update_name>
+        <sys_update_version display_value="sys_ws_definition_1d19b785c30586106be87addd4013180">db99fb85c30586106be87addd4013138</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-18 19:03:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
