@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7b0f6789c3c186106be87addd401319b" extends="sys_import_set_row" label="Mockaroo_Vehicles" max_length="40" name="x_1344554_erp_ve_0_import_vehicles" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=city" label="city" max_length="40" name="u_city" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=country" label="country" max_length="40" name="u_country" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=description" label="description" max_length="131" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=end_date" label="end_date" max_length="40" name="u_end_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=make" label="make" max_length="40" name="u_make" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=model" label="model" max_length="40" name="u_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=start_date" label="start_date" max_length="40" name="u_start_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=vin" label="vin" max_length="40" name="u_vin" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=year" label="year" max_length="40" name="u_year" type="string"/>
+    </element>
+</database>
