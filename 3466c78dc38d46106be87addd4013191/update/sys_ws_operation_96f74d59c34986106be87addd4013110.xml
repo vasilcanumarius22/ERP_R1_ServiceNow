@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Create Vehicles (v3)</name>
+        <operation_script><![CDATA[/*
+API:            Vehicles
+Name:           Create Vehicles
+HTTP Method:    POST
+Relative path:  /vehicles
+Description:    Create vehicle(s) from request body data.
+*/
+
+(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // Declare empty array for answer
+    var answer = [];
+
+    // Declare variables for the possible names in the request body.
+    var make;
+    var model;
+    var vin;
+    var year;
+    var country;
+    var city;
+
+    // Get the request body, a JSON object.
+    var requestBody = request.body;
+
+    // Convert JSON object to a Javascript string using the RESTAPIRequestBody.datastring() method.
+    var requestString = requestBody.dataString;
+
+    // Convert Javascript string to an array.
+    var result = JSON.parse(requestString);
+
+    // For every vehicle in the array, create a record and push the sys_id and VIN of the record to an object.
+    try {
+        for (i in result.vehicles) {
+            make = result.vehicles[i].make;
+            model = result.vehicles[i].model;
+            vin = result.vehicles[i].vin;
+            year = result.vehicles[i].year;
+            country = result.vehicles[i].country;
+            city = result.vehicles[i].city;
+
+            var vehicleTable = 'x_1344554_erp_ve_0_vehicle';
+            var vehicleGr = new GlideRecordSecure(vehicleTable);
+            vehicleGr.initialize();
+            vehicleGr.make = make;
+            vehicleGr.model = model;
+            vehicleGr.vin = vin;
+            vehicleGr.year = year;
+            vehicleGr.country = country;
+            vehicleGr.city = city;
+            vehicleGr.insert();
+
+            var vehicleObj = {
+                "vin": vehicleGr.vin,
+                "sys_id": vehicleGr.sys_id
+            };
+            answer.push(vehicleObj);
+
+        }
+        response.setStatus(201);
+
+    } catch (error) {
+        var serviceError = new sn_ws_err.ServiceError();
+        serviceError.setStatus(500);
+        serviceError.setMessage('Service error');
+        serviceError.setDetail('The server could not process the request.');
+        response.setError(serviceError);
+    }
+
+
+    // Generate the response body. Contains all vehicle records created.
+    response.setBody(answer);
+
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1344554_erp_ve_0/v3/vehicles_api/vehicles</operation_uri>
+        <produces>application/json</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/vehicles</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-18 23:57:20</sys_created_on>
+        <sys_id>96f74d59c34986106be87addd4013110</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Vehicles (v3)</sys_name>
+        <sys_package display_value="ERP_Vehicles_Final" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</sys_scope>
+        <sys_update_name>sys_ws_operation_96f74d59c34986106be87addd4013110</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-18 23:57:20</sys_updated_on>
+        <web_service_definition display_value="Vehicles API">10d75455c38586106be87addd401312d</web_service_definition>
+        <web_service_version display_value="v3">92f789d5c34986106be87addd40131dc</web_service_version>
+    </sys_ws_operation>
+</record_update>

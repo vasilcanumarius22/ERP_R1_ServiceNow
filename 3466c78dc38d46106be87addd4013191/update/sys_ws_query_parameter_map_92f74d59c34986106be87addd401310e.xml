@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter_map">
+    <sys_ws_query_parameter_map action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ws_query_parameter_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-18 23:57:19</sys_created_on>
+        <sys_id>92f74d59c34986106be87addd401310e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>34746091c3c586106be87addd40131db</sys_name>
+        <sys_package display_value="ERP_Vehicles_Final" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</sys_scope>
+        <sys_update_name>sys_ws_query_parameter_map_92f74d59c34986106be87addd401310e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-18 23:57:19</sys_updated_on>
+        <web_service_operation display_value="Get Vehicles (v3)">5ef74d59c34986106be87addd4013102</web_service_operation>
+        <web_service_query_parameter display_value="year">34746091c3c586106be87addd40131db</web_service_query_parameter>
+    </sys_ws_query_parameter_map>
+</record_update>

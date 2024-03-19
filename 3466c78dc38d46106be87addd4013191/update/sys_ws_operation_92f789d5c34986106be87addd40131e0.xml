@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>PATCH</http_method>
+        <name>Update Vehicles (v3)</name>
+        <operation_script><![CDATA[/*
+API:            Vehicles
+Name:           Update Vehicle
+HTTP Method:    PATCH
+Relative path:  /vehicle/{vin}
+Description:    Update vehicle with provided data.
+*/
+
+(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // Declare empty array for answer
+    var answer = [];
+
+    // Get the VIN from the path parameter.
+    var vin = request.pathParams.vin.toString();
+
+    // Declare variables for the possible names in the request body.
+    var requestBody = request.body.data;
+    var make = requestBody.make;
+    var model = requestBody.model;
+    var year = requestBody.year;
+    var country = requestBody.country;
+    var city = requestBody.city;
+
+    //Generate 404 if VIN not provided.
+    if (!vin) {
+        response.setError(new sn_ws_err.NotFoundError('No VIN defined.'));
+        response.setStatus(404);
+        return;
+    }
+
+    // Generate 404 if request body contains no or invalid data.
+    if (!make && !model && !year && !country && !city) {
+        response.setError(new sn_ws_err.NotFoundError('Object contains no or invalid properties.'));
+        response.setStatus(404);
+        return;
+    }
+
+    // Query the Vehicle table for this VIN.
+    var vehicleTable = 'x_1344554_erp_ve_0_vehicle';
+    var vehicleGr = new GlideRecordSecure(vehicleTable);
+    vehicleGr.addQuery('vin', vin);
+    vehicleGr.query();
+
+    // Generate a 404 if no vehicle was found.
+    if (!vehicleGr.hasNext()) {
+        response.setError(new sn_ws_err.NotFoundError('No vehicle found.'));
+        response.setStatus(404);
+        return;
+    }
+
+    // For the vehicle found, update the record with the details in the request body.
+    if (vehicleGr.next()) {
+		if (make) {vehicleGr.make = make;}
+		if (model) {vehicleGr.model = model;}
+		if (year) {vehicleGr.year = year;}
+		if (country) {vehicleGr.country = country;}
+		if (city) {vehicleGr.city = city;}
+        vehicleGr.update();
+    }
+
+    // Set a 200 status for success.
+    response.setStatus(200);
+
+    // Create a JSON object with details of the updated record.
+    var vehicleObj = {
+        "make": vehicleGr.make,
+        "model": vehicleGr.model,
+        "vin": vehicleGr.vin,
+        "year": vehicleGr.year,
+        "country": vehicleGr.country,
+        "city": vehicleGr.city,
+        "sys_id": vehicleGr.sys_id
+    };
+    answer.push(vehicleObj);
+
+    // Generate the response body.
+    response.setBody(answer);
+
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1344554_erp_ve_0/v3/vehicles_api/vehicle/{vin}</operation_uri>
+        <produces>application/json</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/vehicle/{vin}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-18 23:57:19</sys_created_on>
+        <sys_id>92f789d5c34986106be87addd40131e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Vehicles (v3)</sys_name>
+        <sys_package display_value="ERP_Vehicles_Final" source="x_1344554_erp_ve_0">3466c78dc38d46106be87addd4013191</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ERP_Vehicles_Final">3466c78dc38d46106be87addd4013191</sys_scope>
+        <sys_update_name>sys_ws_operation_92f789d5c34986106be87addd40131e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-18 23:57:19</sys_updated_on>
+        <web_service_definition display_value="Vehicles API">10d75455c38586106be87addd401312d</web_service_definition>
+        <web_service_version display_value="v3">92f789d5c34986106be87addd40131dc</web_service_version>
+    </sys_ws_operation>
+</record_update>
